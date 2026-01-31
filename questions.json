@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "In 'The Matrix', what color is the pill that Neo takes?",
+    "options": ["Blue", "Red", "Green", "Yellow"],
+    "answer": "Red",
+    "image": "https://via.placeholder.com/600x400?text=The+Matrix+Scene",
+    "maxPoints": 100
+  },
+  {
+    "id": 2,
+    "question": "Which movie features a character named 'Doc Brown'?",
+    "options": ["Star Wars", "Back to the Future", "Indiana Jones", "E.T."],
+    "answer": "Back to the Future",
+    "image": "https://via.placeholder.com/600x400?text=DeLorean",
+    "maxPoints": 100
+  },
+  {
+    "id": 3,
+    "question": "What is the name of the kingdom in 'Frozen'?",
+    "options": ["Arendelle", "Genovia", "Florin", "Duloc"],
+    "answer": "Arendelle",
+    "image": "https://via.placeholder.com/600x400?text=Frozen+Landscape",
+    "maxPoints": 100
+  }
+]
