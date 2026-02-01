@@ -137,4 +137,25 @@ button:hover {
     #question-text { font-size: 1.2rem; }
     .options-grid { grid-template-columns: 1fr; }
     .image-container { height: 200px; }
+
+}
+#admin-area {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.hidden-btn {
+    background: none;
+    border: none;
+    color: #e0e0e0; /* Very light gray, almost invisible */
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hidden-btn:hover {
+    color: red; /* Reveals itself when you hover */
+    text-decoration: underline;
+    background: none;
 }
