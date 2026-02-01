@@ -21,7 +21,7 @@ const potentialDisplay = document.getElementById('potential-points');
 // 1. Fetch JSON Data
  async function loadQuestions() {
     try {
-        const response = await fetch('questions.json');
+        const response = await fetch('./questions.json');
         questions = await response.json();
     } catch (error) {
         console.error("Could not load questions:", error);
@@ -181,4 +181,5 @@ function showScreen(screen) {
 }
 
 // Init
+
 //loadQuestions();
