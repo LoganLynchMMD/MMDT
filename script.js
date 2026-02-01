@@ -185,17 +185,24 @@ loadQuestions();
 const clearBtn = document.getElementById('clear-scores-btn');
 
 clearBtn.addEventListener('click', () => {
-    // 1. Confirm with the user so they don't do it by accident
-    if (confirm("Are you sure you want to delete all leaderboard data? This cannot be undone.")) {
+    // 1. Ask for a password
+    const password = prompt("Enter Admin Password to clear scores:");
+    
+    // 2. Check the password (CHANGE 'admin123' to whatever password you want)
+    if (password === "MMDRulez26!") {
         
-        // 2. Clear the specific storage item
+        // 3. Clear the data
         localStorage.removeItem('movieTriviaScores');
         
-        // 3. Refresh the visual list immediately
+        // 4. Update the screen
         displayLeaderboard();
         
-        // 4. Optional: Give feedback
-        alert("Leaderboard cleared!");
+        alert("Success: Leaderboard has been reset.");
+        
+    } else if (password !== null) {
+        // 5. Wrong password (and they didn't hit Cancel)
+        alert("Incorrect Password!");
     }
 });
+
 
