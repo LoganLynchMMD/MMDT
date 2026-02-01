@@ -182,3 +182,20 @@ function showScreen(screen) {
 
 // Init
 loadQuestions();
+const clearBtn = document.getElementById('clear-scores-btn');
+
+clearBtn.addEventListener('click', () => {
+    // 1. Confirm with the user so they don't do it by accident
+    if (confirm("Are you sure you want to delete all leaderboard data? This cannot be undone.")) {
+        
+        // 2. Clear the specific storage item
+        localStorage.removeItem('movieTriviaScores');
+        
+        // 3. Refresh the visual list immediately
+        displayLeaderboard();
+        
+        // 4. Optional: Give feedback
+        alert("Leaderboard cleared!");
+    }
+});
+
